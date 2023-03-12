@@ -1,3 +1,3 @@
-import custom from "./custom/custom"
+import custom from './vendor/bootstrap';
 
 custom.hello();

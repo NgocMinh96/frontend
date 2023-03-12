@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
+
 <body>
-    <div class="">
-        <span class="text-danger">Nguyen Ngoc Minh</span>
-        <button class="btn btn-danger">button</button>
+
+    <%= require('html-loader!./partials/header.html').default %>
+
+    <ul>
+        <li><a href="./pages/home.html">Home</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+    </ul>
+    <div>
+        <img src="<%= require('./images/sample.jpg') %>" alt="Sample Image">
     </div>
+
+    <%= require('html-loader!./partials/footer.html').default %>
+
 </body>
+
 </html>

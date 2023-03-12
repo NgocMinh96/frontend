@@ -1,4 +1,4 @@
 // Import the main Sass file
-import "./styles/main.scss";
+import './styles/main.scss';
 // Import the main js file
-import "./js/main.js";
+import './js/main.js';
